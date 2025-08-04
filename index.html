@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Bliss - Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Hotel Bliss</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Rooms</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Hotel Bliss</h2>
+        <p>Book your stay with comfort & luxury</p>
+        <a href="#reservation" class="btn">Reserve Now</a>
+    </section>
+
+    <section id="reservation" class="reservation-form">
+        <h2>Book Your Room</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="checkin">Check-In Date</label>
+            <input type="date" id="checkin" required>
+
+            <label for="checkout">Check-Out Date</label>
+            <input type="date" id="checkout" required>
+
+            <label for="guests">Guests</label>
+            <input type="number" id="guests" min="1" max="10" required>
+
+            <button type="submit">Reserve</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hotel Bliss. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
